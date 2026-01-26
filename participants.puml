@@ -20,19 +20,23 @@ box "MIB" #HoneyDew
     participant "File\nService" as File order 54
     participant "History" as History order 57
     participant "Important\nNotice" as IS order 60
-    participant "Integration\nService" as Integration order 63
-    queue "Kafka" as Kafka order 45
+    queue "Kafka" as Kafka order 63
     participant "Limit\nService" as Limit order 66
-    participant "Notification" as Notification order 70
-    participant "Payment\nService" as Payment order 73
-    participant "Product\nRequest" as Request order 76
-    participant "Profile\nService" as Profile order 79
-    participant "Receipt\nService" as Receipt order 82
-    participant "Registration\nService" as Registration order 85
-    participant "Service\nCatalog" as Service order 88
-    participant "Template\nService" as Template order 91
-    participant "Transfer\nService" as Transfer order 94
-    participant "Version\nControl" as Version order 97
+    participant "Notification" as Notification order 69
+    participant "Payment\nService" as Payment order 72
+    participant "Product\nRequest" as Request order 75
+    participant "Profile\nService" as Profile order 78
+    participant "Receipt\nService" as Receipt order 81
+    participant "Registration\nService" as Registration order 84
+    participant "Service\nCatalog" as Service order 87
+    participant "Template\nService" as Template order 90
+    participant "Transfer\nService" as Transfer order 93
+    participant "Version\nControl" as Version order 96
+
+      box "Integration" #Linen
+        participant "Integration\nService" as Integration order 99
+      end box
+
 end box
 
 box "Bank" #MintCream
