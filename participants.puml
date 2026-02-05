@@ -10,7 +10,6 @@ box "MIB" #HoneyDew
         end box
 
     participant "Admin\nPanel" as Admin order 30
-    participant "Auth\nService" as Auth order 33
     participant "Banner\nService" as Banner order 36
     participant "Cashback\nService" as Cashback order 39
     participant "Chat\nService" as Chat order 42
@@ -32,6 +31,7 @@ box "MIB" #HoneyDew
     participant "Template\nService" as Template order 90
     participant "Transfer\nService" as Transfer order 93
     participant "Version\nControl" as Version order 96
+    participant "Auth\nService" as Auth order 98
 
       box "Integration" #Linen
         participant "Integration\nService" as Integration order 99
