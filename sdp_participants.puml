@@ -1,7 +1,7 @@
 @startuml
 !pragma teoz true
 
-actor Client as Client order 10
+actor Оператор as User order 10
 
 box "SDP" #HoneyDew
 
