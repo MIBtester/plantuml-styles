@@ -5,8 +5,9 @@ actor Client as Client order 10
 
 box "SDP" #HoneyDew
 
-        box "Mobile" #Linen
+        box "Frontend" #Linen
             participant "Mobile" as Mobile order 20
+            participant "Web" as Web order 25
         end box
 
     participant "Admin\nPanel" as Admin order 30
