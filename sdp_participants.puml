@@ -17,7 +17,6 @@ box "SDP" #HoneyDew
     queue "Kafka" as Kafka order 63
 
       box "Integration" #Linen
-        participant "KoronaPay\nAdapter" as ZK order 70
         participant "Integration\nService" as Integration order 99
       end box
 
