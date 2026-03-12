@@ -12,11 +12,11 @@ box "SDP" #HoneyDew
 
     participant "Admin\nPanel" as Admin order 30
     participant "Auth\nService" as Auth order 33
-    participant "Core\nSevice" as Core order 36
+    participant "KoronaPay iFrame" as ZK order 39
+    participant "Core\nSevice" as Core order 42
     queue "Kafka" as Kafka order 63
 
       box "Integration" #Linen
-        participant "KoronaPay\nAdapter" as ZK order 70
         participant "Integration\nService" as Integration order 99
       end box
 
