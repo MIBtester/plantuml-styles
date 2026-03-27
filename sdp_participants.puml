@@ -8,6 +8,7 @@ box "SDP" #HoneyDew
         box "Frontend" #Linen
             participant "Mobile" as Mobile order 20
             participant "Web" as Web order 25
+            participant "АРМ Золотая корона"
         end box
 
     participant "Admin\nPanel" as Admin order 30
