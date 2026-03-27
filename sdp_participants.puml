@@ -8,7 +8,7 @@ box "SDP" #HoneyDew
         box "Frontend" #Linen
             participant "Mobile" as Mobile order 20
             participant "Web" as Web order 25
-            participant "АРМ Золотая корона"
+            participant "KoronaPay iFrame" as ZK order 27
         end box
 
     participant "Admin\nPanel" as Admin order 30
@@ -17,7 +17,6 @@ box "SDP" #HoneyDew
     queue "Kafka" as Kafka order 63
 
       box "Integration" #Linen
-        participant "KoronaPay iFrame" as ZK order 80
         participant "Integration\nService" as Integration order 99
       end box
 
@@ -35,6 +34,5 @@ box "Bank" #MintCream
     participant "Proposal" as Proposal order 170
 
 end box
-
 
 @enduml
