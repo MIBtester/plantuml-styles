@@ -20,7 +20,7 @@ box "MIB" #HoneyDew
     participant "History" as History order 57
     participant "Important\nNotice" as IS order 60
     queue "Kafka" as Kafka order 63
-    participant "Limit\nService" as Limit order 66
+    participant "Transfer\nService" as Transfer order 66
     participant "Notification" as Notification order 69
     participant "Payment\nService" as Payment order 72
     participant "Product\nRequest" as Request order 75
@@ -29,7 +29,7 @@ box "MIB" #HoneyDew
     participant "Registration\nService" as Registration order 84
     participant "Service\nCatalog" as Service order 87
     participant "Template\nService" as Template order 90
-    participant "Transfer\nService" as Transfer order 93
+    participant "Limit\nService" as Limit order 93
     participant "Version\nControl" as Version order 96
     participant "Auth\nService" as Auth order 98
 
