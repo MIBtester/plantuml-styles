@@ -1,36 +1,36 @@
 @startuml
 !pragma teoz true
 
-actor Client as Client order 10
+actor Client as Client order 01
 
 box "MIB" #HoneyDew
 
         box "Mobile" #Linen
-            participant "Mobile" as Mobile order 20
+            participant "Mobile" as Mobile order 05
         end box
 
+    participant "Product\nRequest" as Request order 10
+    participant "Transfer\nService" as Transfer order 15
+    participant "Payment\nService" as Payment order 20
+    participant "Directory\nService" as Directory order 25
     participant "Admin\nPanel" as Admin order 30
     participant "Banner\nService" as Banner order 36
     participant "Cashback\nService" as Cashback order 39
     participant "Chat\nService" as Chat order 42
-    participant "Directory\nService" as Directory order 45
     participant "Discount\nCard" as Discount order 48
     participant "Document\nService" as Document order 51
     participant "File\nService" as File order 54
     participant "History" as History order 57
     participant "Important\nNotice" as IS order 60
-    queue "Kafka" as Kafka order 63
-    participant "Transfer\nService" as Transfer order 66
     participant "Notification" as Notification order 69
-    participant "Payment\nService" as Payment order 72
-    participant "Product\nRequest" as Request order 75
     participant "Profile\nService" as Profile order 78
     participant "Receipt\nService" as Receipt order 81
     participant "Registration\nService" as Registration order 84
     participant "Service\nCatalog" as Service order 87
     participant "Template\nService" as Template order 90
     participant "Auth\nService" as Auth order 93
-    participant "Limit\nService" as Limit order 96
+    queue "Kafka" as Kafka order 96
+    participant "Limit\nService" as Limit order 97
     participant "Version\nControl" as Version order 98
 
       box "Integration" #Linen
