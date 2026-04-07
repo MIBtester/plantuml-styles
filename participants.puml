@@ -29,9 +29,9 @@ box "MIB" #HoneyDew
     participant "Registration\nService" as Registration order 84
     participant "Service\nCatalog" as Service order 87
     participant "Template\nService" as Template order 90
-    participant "Limit\nService" as Limit order 93
-    participant "Version\nControl" as Version order 96
-    participant "Auth\nService" as Auth order 98
+    participant "Auth\nService" as Auth order 93
+    participant "Limit\nService" as Limit order 96
+    participant "Version\nControl" as Version order 98
 
       box "Integration" #Linen
         participant "Integration\nService" as Integration order 99
