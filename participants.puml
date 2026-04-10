@@ -50,6 +50,7 @@ box "Bank" #MintCream
     participant "Bank Bus" as BankBus order 350
     participant "BakaiAPI" as BakaiAPI order 360
     participant "Proposal" as Proposal order 370
+    participant "gRPS Notification Service" as gRPSNotification order 380
 
 end box
 @enduml
