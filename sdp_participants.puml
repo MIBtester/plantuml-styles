@@ -8,30 +8,27 @@ box "SDP" #HoneyDew
         box "Frontend" #Linen
             participant "Mobile" as Mobile order 20
             participant "Web" as Web order 25
-            participant "KoronaPay iFrame" as ZK order 27
+            participant "KoronaPay iFrame" as ZK order 30
         end box
 
-    participant "Admin\nPanel" as Admin order 30
-    participant "Auth\nService" as Auth order 33
-    participant "Core\nSevice" as Core order 42
-    queue "Kafka" as Kafka order 63
+    participant "Admin\nPanel" as Admin order 40
+    participant "Auth\nService" as Auth order 50
+    participant "Client\nService" as Client order 60
+    participant "Directory\nService" as Directory order 70
+    participant "Transfer\nSevice" as Core order 80
+    queue "Kafka" as Kafka order 90
 
       box "Integration" #Linen
-        participant "Integration\nService" as Integration order 99
+        participant "Integration\nService" as Integration order 100
       end box
 
 end box
 
-box "Bank" #MintCream
+box "External Services" #MintCream
 
-    participant "Processing" as Processing order 100
-    participant "OnlineBank.WebAPI" as WebAPI order 110
-    database "OnlineBank DB" as OBDB order 120
-    participant "Processing Gate" as Pgate order 130
-    participant "OnlineBank.IntegrationService" as OBIS order 140
-    participant "Bank Bus" as BankBus order 150
-    participant "BakaiAPI" as BakaiAPI order 160
-    participant "Proposal" as Proposal order 170
+    participant "OnlineBank.WebAPI" as OBWA order 110
+    participant "OnlineBank.IntegrationService" as OBIS order 120
+    participant "KoronaPay" as korona order 150
 
 end box
 
