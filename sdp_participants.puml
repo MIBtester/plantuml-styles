@@ -3,7 +3,7 @@
 
 actor Оператор as User order 10
 
-box "SDP" #HoneyDew
+box "Единый портал МСДП" #HoneyDew
 
         box "Frontend" #Linen
             participant "Mobile" as Mobile order 20
@@ -25,7 +25,7 @@ box "SDP" #HoneyDew
 
 end box
 
-box "External Services" #MintCream
+box "Внешние сервисы" #MintCream
 
     participant "OnlineBank.WebAPI" as OBWA order 200
     participant "OnlineBank.IntegrationService" as OBIS order 210
