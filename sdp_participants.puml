@@ -18,17 +18,18 @@ box "SDP" #HoneyDew
     participant "Transfer\nSevice" as Core order 80
     queue "Kafka" as Kafka order 90
 
-      box "Integration" #Linen
+      box "Слой интеграции" #Linen
         participant "Integration\nService" as Integration order 100
+        participant "KoronaPay Adapter" as ZKadapter order 101
       end box
 
 end box
 
 box "External Services" #MintCream
 
-    participant "OnlineBank.WebAPI" as OBWA order 110
-    participant "OnlineBank.IntegrationService" as OBIS order 120
-    participant "KoronaPay" as korona order 150
+    participant "OnlineBank.WebAPI" as OBWA order 200
+    participant "OnlineBank.IntegrationService" as OBIS order 210
+    participant "KoronaPay" as korona order 220
 
 end box
 
